@@ -4,7 +4,9 @@ const { getCommentById,postCommentById,deleteComment} = require("./__controller/
 const {getUsers} = require("./__controller/users.Controller")
 const {getApi} = require("./__controller/api.controller.js")
 const express = require("express");
+const cors = require('cors');
 const app = express();
+app.use(cors())
 app.use(express.json())
 
 
